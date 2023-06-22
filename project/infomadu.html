@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="title">
+            <h1> MORE ABOUT  MADHUGIRI FORT</h1>
+          </div>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+        p1 { color:blue ;font-family:cursive;font-size: large;}
+        h3 {color: black;}
+        h2 {color: black;}
+        p2 {color: darkgreen;font-family:cursive;font-size: large;}
+        p3 {color: darkslategray;font-family:cursive;font-size: large;}
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="MADUGIRI/madu1.jpg" width="900" height="300" >
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="MADUGIRI/madu2.JPG" width="900" height="300">
+                
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="MADUGIRI/madu3.jpg" width="900" height="300" >
+              </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="MADUGIRI/madu4.avif" width="900" height="300">
+          
+        </div>
+    
+        
+    
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+        </html> 
+        
+     
+        <h3>LOCATION</h3>
+      <p1>Madhugiri Fort lies in Madhugiri which is in the Tumkur district in the State of Karnataka. Madhu-giri is a single hill and the second largest monolith in entire Asia. The small town is at a distance of 100 kilometres (62 mi) from Bangalore and is famous for its fort and temples. Many tourists go to Madhugiri to visit the fort, which is famous for its architecture. The fort, perched atop the steep slope of a hill, was built by the Vijayanagar Dynasty
+       <!--<img src="NAMADA BOARD.jpg" alt="BOARD" width="300" height="300">-->
+    </p1>
+     <br>
+     <h3 class="history-heading2">HISTORY</h3>
+      <p2>
+        Madhugiri Fort was built in the 17th century by the Vijayanagara dynasty, under the supervision of Raja Hire Gowda. The fort was later fortified by Hyder Ali and Tippu Sultan during the 18th century. It was an important stronghold for the Mysore rulers and was captured by the British in 1791 during the Anglo- Mysore Wars. The fort has seen many battles and was an important center of resistance against the British during the Indian freedom struggle.</p2>
+        <br>
+        <br>
+<p2>
+The fort has a unique architecture and is built using granite stones. It has a series of gateways, walls, bastions, and watchtowers, and is a classic example of the military architecture of the bygone era. The fort is surrounded by seven concentric walls, with each wall having a series of gates and enclosures. The walls are so steep that it is almost impossible for an enemy to climb them. One of the most interesting features of the fort is its massive entrance, which is called the ‘Diddibagilu’ or the ‘Gate of Hell’. The entrance is about 25 feet high and 17 feet wide and has a series of chambers
+that were used to store ammunition, weapons, and food supplies. The entrance also has a secret escape route that was used by the soldiers to escape in times of danger. The fort also has several water tanks and a temple dedicated to Lord Gopalakrishna. The temple has beautiful carvings and is a fine example of the Hoysala architecture.
+      </p2>
+
+  <br>
+  <br>
+  
+
+  <h2>ಮಧುಗಿರಿ ಬೆಟ್ಟದ ಕೋಟೆ</h2>
+      <p3>
+        ಮಧುಗಿರಿಯು ಕರ್ನಾಟಕದ ತುಮಕೂರು ಜಿಲ್ಲೆಯಲ್ಲಿರುವ ಒಂದು ಸಣ್ಣ ಪಟ್ಟಣವಾಗಿದ್ದು, ತನ್ನ ಅಪ್ರತಿಮ ಮಧುಗಿರಿಗೆ ಹೆಸರುವಾಸಿಯಾಗಿದೆ ಕೋಟೆ. ಮಧುಗಿರಿ ಬೆಟ್ಟದ ಕೋಟೆ ಎಂದೂ ಕರೆಯಲ್ಪಡುವ ಈ ಕೋಟೆಯು 3,930 ಅಡಿ ಎತ್ತರದಲ್ಲಿದೆ ಮತ್ತು ಏಷ್ಯಾದ ಅತಿದೊಡ್ಡ ಏಕಶಿಲೆಯ ಶಿಲಾ ರಚನೆಗಳಲ್ಲಿ ಒಂದೆಂದು ಪರಿಗಣಿಸಲಾಗಿದೆ. ಮಧುಗಿರಿಯು ಉತ್ತಮ ಸಂಪರ್ಕ ಹೊಂದಿದೆ ರಸ್ತೆ ಮತ್ತು ಬೆಂಗಳೂರಿನಿಂದ 105 ಕಿಮೀ ಮತ್ತು ತುಮಕೂರಿನಿಂದ 43 ಕಿಮೀ ದೂರದಲ್ಲಿದೆ.
+        <br>
+        <br>
+
+ಮಧುಗಿರಿ ಕೋಟೆಯನ್ನು 17 ನೇ ಶತಮಾನದಲ್ಲಿ ವಿಜಯನಗರ ರಾಜವಂಶದವರು ರಾಜನ ಮೇಲ್ವಿಚಾರಣೆಯಲ್ಲಿ ನಿರ್ಮಿಸಿದರು. ಹಿರೇ ಗೌಡ. ನಂತರ 18 ನೇ ಶತಮಾನದಲ್ಲಿ ಹೈದರ್ ಅಲಿ ಮತ್ತು ಟಿಪ್ಪು ಸುಲ್ತಾನ್ ಕೋಟೆಯನ್ನು ಭದ್ರಪಡಿಸಿದರು. ಇದು ಒಂದು ಮೈಸೂರು ಅರಸರಿಗೆ ಪ್ರಮುಖ ಭದ್ರಕೋಟೆ ಮತ್ತು ಬ್ರಿಟಿಷರು 1791 ರಲ್ಲಿ ಆಂಗ್ಲೋ- ಮೈಸೂರು ಯುದ್ಧಗಳು. ಕೋಟೆಯು ಅನೇಕ ಯುದ್ಧಗಳನ್ನು ಕಂಡಿದೆ ಮತ್ತು ಇದರ ವಿರುದ್ಧ ಪ್ರತಿರೋಧದ ಪ್ರಮುಖ ಕೇಂದ್ರವಾಗಿತ್ತು ಭಾರತೀಯ ಸ್ವಾತಂತ್ರ್ಯ ಹೋರಾಟದ ಸಮಯದಲ್ಲಿ ಬ್ರಿಟಿಷರು. ವಾಸ್ತುಶಿಲ್ಪ ಕೋಟೆಯು ವಿಶಿಷ್ಟವಾದ ವಾಸ್ತುಶಿಲ್ಪವನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಗ್ರಾನೈಟ್ ಕಲ್ಲುಗಳನ್ನು ಬಳಸಿ ನಿರ್ಮಿಸಲಾಗಿದೆ. ಇದು ಗೇಟ್ವೇಗಳು, ಗೋಡೆಗಳ ಸರಣಿಯನ್ನು ಹೊಂದಿದೆ, ಬುರುಜುಗಳು, ಮತ್ತು ಕಾವಲು ಗೋಪುರಗಳು, ಮತ್ತು ಹಿಂದಿನ ಯುಗದ ಮಿಲಿಟರಿ ವಾಸ್ತುಶಿಲ್ಪದ ಒಂದು ಶ್ರೇಷ್ಠ ಉದಾಹರಣೆಯಾಗಿದೆ. ಕೋಟೆಯು ಏಳು ಕೇಂದ್ರೀಕೃತ ಗೋಡೆಗಳಿಂದ ಆವೃತವಾಗಿದೆ, ಪ್ರತಿ ಗೋಡೆಯು ಗೇಟ್‌ಗಳು ಮತ್ತು ಆವರಣಗಳ ಸರಣಿಯನ್ನು ಹೊಂದಿದೆ. ದಿ
+ಗೋಡೆಗಳು ತುಂಬಾ ಕಡಿದಾದವು, ಶತ್ರುಗಳಿಗೆ ಅವುಗಳನ್ನು ಏರಲು ಅಸಾಧ್ಯವಾಗಿದೆ. ಕೋಟೆಯ ಅತ್ಯಂತ ಆಸಕ್ತಿದಾಯಕ ವೈಶಿಷ್ಟ್ಯವೆಂದರೆ ಅದರ ಬೃಹತ್ ಪ್ರವೇಶದ್ವಾರ, ಇದನ್ನು ‘ದಿಡ್ಡಿಬಾಗಿಲು’ ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.ಅಥವಾ ‘ಗೇಟ್ ಆಫ್ ಹೆಲ್’. ಪ್ರವೇಶದ್ವಾರವು ಸುಮಾರು 25 ಅಡಿ ಎತ್ತರ ಮತ್ತು 17 ಅಡಿ ಅಗಲವಿದೆ ಮತ್ತು ಕೋಣೆಗಳ ಸರಣಿಯನ್ನು ಹೊಂದಿದೆ ಮದ್ದುಗುಂಡುಗಳು, ಶಸ್ತ್ರಾಸ್ತ್ರಗಳು ಮತ್ತು ಆಹಾರ ಸರಬರಾಜುಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು ಬಳಸಲಾಗುತ್ತಿತ್ತು. ಪ್ರವೇಶದ್ವಾರವು ರಹಸ್ಯ ತಪ್ಪಿಸಿಕೊಳ್ಳುವಿಕೆಯನ್ನು ಹೊಂದಿದೆ ಅಪಾಯದ ಸಮಯದಲ್ಲಿ ತಪ್ಪಿಸಿಕೊಳ್ಳಲು ಸೈನಿಕರು ಬಳಸುತ್ತಿದ್ದ ಮಾರ್ಗ.
+ಕೋಟೆಯು ಹಲವಾರು ನೀರಿನ ತೊಟ್ಟಿಗಳನ್ನು ಮತ್ತು ಗೋಪಾಲಕೃಷ್ಣ ದೇವರಿಗೆ ಸಮರ್ಪಿತವಾದ ದೇವಾಲಯವನ್ನು ಹೊಂದಿದೆ. ದೇವಸ್ಥಾನ ಹೊಂದಿದೆ ಸುಂದರವಾದ ಕೆತ್ತನೆಗಳು ಮತ್ತು ಹೊಯ್ಸಳ ವಾಸ್ತುಶಿಲ್ಪಕ್ಕೆ ಉತ್ತಮ ಉದಾಹರಣೆಯಾಗಿದೆ.
+      
+  
+
+    </p3>

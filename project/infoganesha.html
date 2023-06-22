@@ -1,0 +1,208 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="title">
+            <h1> MORE ABOUT GULUR GANESHA TEMPLE </h1>
+          </div>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+        p1 { color:blue ;font-family:cursive;font-size: large;}
+        h3 {color: black;}
+        h2 {color: black;}
+        p2 {color: darkgreen;font-family:cursive;font-size: large;}
+        p3 {color: darkslategray;font-family:cursive;font-size: large;}
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="GULUR/gulur1.jpg" width="900" height="300" >
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="GULUR/gulur2.jpg" width="900" height="300">
+                
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="GULUR/gulur3.jpg" width="900" height="300" >
+              </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="GULUR/gulur4.jpeg" width="900" height="300">
+          
+        </div>
+    
+        
+    
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+        </html> 
+        
+     
+        <h3>LOCATION</h3>
+      <p1>  Gulur Ganesh temple is situated about 5 km away from the Tumkur town, on the Tumkur-Kunigal road.
+        
+    </p1>
+     <br>
+     <h3 class="history-heading2">HISTORY</h3>
+      <p2>
+        The Gulur Ganesha temple is synonymous with the village of Gulur. It is home to a striking idol of Lord Ganesha in black stone. Right in front of it stands another impressive 10-feet clay idol of Ganesha that is remade every year. Its construction starts on Ganesh Chaturthi and it is unveiled on Diwali. There’s an interesting tale behind its worship. There once lived a poor Brahmin boy thereabouts. One day, he had a dream in which Ganesha told him to pray to him to get rid of his troubles.
+        
+        But how was he supposed to do it? This was also the time when the well-known Vedic sage, Agastya, had stopped by Gulur during one of his travels. He happened to meet the boy and learnt about his dilemma. Agastya told him to collect clay from the bank of the local lake and make an idol of Ganesha. After 30 days, the boy was freed from his troubles. It was a miracle. The people of Gulur have since made it a practice to pray to Ganesha or the story goes. 
+
+
+  <h2>ಗೂಳೂರು ಗಣೇಶ  </h2>
+      <p3>
+      
+        ಗೂಳೂರು ತುಮಕೂರು ಜಿಲ್ಲೆಯ ಪುಟ್ಟ ಗ್ರಾಮವಾಗಿದ್ದು, ಗಣಪತಿ ಹಬ್ಬವನ್ನು ವಿಶಿಷ್ಟ ರೀತಿಯಲ್ಲಿ ಆಚರಿಸಲು ಹೆಸರುವಾಸಿಯಾಗಿದೆ
+      
+        <br>
+        <br>
+        ಯಾವಾಗಲೂ ಕಷ್ಟಗಳನ್ನು ಅನುಭವಿಸುತ್ತಿದ್ದ ಬಡ ಬ್ರಾಹ್ಮಣನು ವಾಸಿಸುತ್ತಿದ್ದನು ಮತ್ತು ಕಾಲಾನಂತರದಲ್ಲಿ ಅದು ಹೆಚ್ಚಾಯಿತು. ಭಗವಾನ್ ಗಣೇಶನು ಅವನ ಕನಸಿಗೆ ಬಂದು ತನ್ನ ಪ್ರಾರ್ಥನೆಗಳನ್ನು ಸಲ್ಲಿಸಲು ಹೇಳಿದನು ಮತ್ತು ಅವನ ಎಲ್ಲಾ ಸಮಸ್ಯೆಗಳಿಂದ ಅವನು ಮುಕ್ತನಾಗುತ್ತಾನೆ.
+        ಗಣೇಶನನ್ನು ಹೇಗೆ ಆಚರಿಸಬೇಕು ಅಥವಾ ಪೂಜೆ ಮಾಡಬೇಕು ಎಂದು ತಿಳಿದಿಲ್ಲದ ಕಾರಣ ಅವರು ದೇವರನ್ನು ಪೂಜಿಸುವ ಬಗ್ಗೆ ಎಲ್ಲಾ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸಲು ಪ್ರಯತ್ನಿಸಿದರು. ಅವರು ದಕ್ಷಿಣದಿಂದ ಉತ್ತರಕ್ಕೆ ಪ್ರಯಾಣಿಸುತ್ತಿದ್ದ ಅಗಸ್ತ್ಯ ಋಷಿಯನ್ನು ಭೇಟಿಯಾದರು, ಅವರು ವಿಶ್ರಾಂತಿಗಾಗಿ ತಮ್ಮ ಹಳ್ಳಿಯಲ್ಲಿ ನಿಂತರು.
+        ಅವನು ತನ್ನ ಎಲ್ಲಾ ಸಮಸ್ಯೆಗಳನ್ನು ಮತ್ತು ತನ್ನ ಕನಸನ್ನು ಋಷಿಗೆ ವಿವರಿಸಿದನು. ಋಷಿ ಅಗಸ್ತ್ಯ ಅವರು ಗಣೇಶ ದೇವರಿಗೆ ಆಚರಿಸಲು ಮತ್ತು ಪೂಜೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡಿದರು, ಇದನ್ನು ಇಂದಿಗೂ ಅನುಸರಿಸಲಾಗುತ್ತದೆ.
+
+ಋಷಿಯು ಹತ್ತಿರದ ಕೆರೆಯಿಂದ ಮರಳನ್ನು ಸಂಗ್ರಹಿಸಲು ಕೇಳಿದನು, ಇದರಿಂದ ಅವನು ಸುಮಾರು 8 ರಿಂದ 9 ಅಡಿ ಎತ್ತರದ ಗಣೇಶನ ವಿಗ್ರಹವನ್ನು ಮಾಡಬಹುದು. ಇದು ಪೂರ್ಣಗೊಂಡ ನಂತರ, 30 ದಿನಗಳ ಕಾಲ ಕಟ್ಟುನಿಟ್ಟಿನ ಪೂಜೆಯನ್ನು ನೆರವೇರಿಸಿ ನಂತರ ಮೂರ್ತಿಯನ್ನು ಕೆರೆಯಲ್ಲಿ ಮುಳುಗಿಸಲಾಗುತ್ತದೆ.
+
+ಪೂಜೆಯನ್ನು ಮಾಡಿದ ನಂತರ, ಬ್ರಾಹ್ಮಣನು ಕಷ್ಟಗಳಿಂದ ಮುಕ್ತನಾದನು, ಅಂದಿನಿಂದ ಅವನು ನಿರಂತರವಾಗಿ ಪೂಜೆಯನ್ನು ಮುಂದುವರೆಸಿದನು. ಬಲಿ ಪಾಡ್ಯಮಿ (ದೀಪಾವಳಿ) ದಿನದಂದು ಪೂಜೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ  . ಕಾರ್ತಿಕ ಮಾಸ ಮುಗಿದ ಮೂರನೇ ದಿನ ವಾರ್ಷಿಕ ಜಾತ್ರೆ ನಡೆಯುತ್ತದೆ  .
+      </p3>

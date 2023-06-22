@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="title">
+            <h1> MORE ABOUT MANDARAGIRI</h1>
+          </div>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+        p1 { color:blue ;font-family:cursive;font-size: large;}
+        h3 {color: black;}
+        h2 {color: black;}
+        p2 {color: darkgreen;font-family:cursive;font-size: large;}
+        p3 {color: darkslategray;font-family:cursive;font-size: large;}
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="MANDARAGIRI/mandara1.jpg" width="900" height="300" >
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="MANDARAGIRI/mandara2.jpg" width="900" height="300">
+                
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="MANDARAGIRI/mandara3.jpg" width="900" height="300" >
+              </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="MANDARAGIRI/mandara4.webp" width="900" height="300">
+          
+        </div>
+    
+        
+    
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+        </html> 
+        
+     
+        <h3>LOCATION</h3>
+      <p1> Mandaragiri or Basadi-betta is a Jain pilgrimage located on Mandaragiri Hill in Tumkur district in the Indian state of Karnataka. 
+        
+    </p1>
+     <br>
+     <h3 class="history-heading2">HISTORY</h3>
+      <p2>
+        The Mandaragiri temple complex is an important Jain pilgrimage centre named after Mallinatha.[1] The hilltop has four twelfth-century temples[2] and one stupa enclosed in a massive stone wall with paintings of Tirthankaras. The back wall, the original entrance of the temple, features an entrance gate with two pillars bearing carvings of elephants and an image of Tirthankara seated on a lotus pedestal. The first temple doesn't enshrine any idols and the remaining three temples are dedicated to Chandraprabha, Parshvanatha and Suparshvanatha. The stupa houses one stone slab with a carving of a footprint. The temple complex also includes a large manastambha.[3]
+
+        <br>
+        On the foot of the hill, a 81 feet (25 m) temple called Guru mandir dedicated to Jain Acharya Shantisagar is located. This temple is popularly known as pinchi temple and peacock temple due to the temple structure resembling a pinchi, peacock feather fan, used by Digambara monks.[4] A 21 feet (6.4 m) monolithic statue of Chandraprabha is located near Guru mandir.[5][2]
+        
+        Maidala Kere and Padmavati Kere are the two lakes located near the temple complex on the hilltop. There is a ruined temple housing a large stone-carved image of a Tirthankara near Maidala lake. There are eight idols of goddesses scattered near the Padmavati Kere.[3] 
+      </p2>
+
+
+
+  <h2> ಮಂದರಗಿರಿ ಬೆಟ್ಟ </h2>
+      <p3>
+        ಮಂದರಗಿರಿ ಬೆಟ್ಟದ ಕಡೆಗೆ ಹೋಗುವ ರಸ್ತೆಯ ಸ್ಥಿತಿ ಸುಸ್ಥಿತಿಯಲ್ಲಿದೆ. ಆದ್ದರಿಂದ, ಚಲಿಸುವ ದೃಶ್ಯವು ನಿಮ್ಮನ್ನು ರೋಮಾಂಚನಗೊಳಿಸುವುದರಿಂದ ಕಾರು ಅಥವಾ ಬೈಕು ಸವಾರಿ ಅತ್ಯುತ್ತಮವಾಗಿ ಸೂಕ್ತವಾಗಿದೆ. ಗಮ್ಯಸ್ಥಾನದ ಪ್ರಯಾಣವು ತಲುಪಲು 2 ಗಂಟೆಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ. ಈ ಸ್ಥಳವು ತುಮಕೂರು ನಗರದಿಂದ ಸುಮಾರು 10 ಕಿ.ಮೀ ದೂರದಲ್ಲಿದೆ ಮತ್ತು ರಾಷ್ಟ್ರೀಯ ಹೆದ್ದಾರಿ 75 ರಲ್ಲಿದೆ. 
+        <br>
+        ಸುಂದರವಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಜೈನ ದೇವಾಲಯ, ಗುರು ಮಂದಿರವು ಮಂದರಗಿರಿಯ ಪ್ರಮುಖ ಆಕರ್ಷಣೆಯಾಗಿದೆ. ಇದು ಜೈನ ಸಮುದಾಯಕ್ಕೆ ಮಹತ್ವದ ಯಾತ್ರಾ ಸ್ಥಳವಾಗಿರುವುದರಿಂದ ಜನಪ್ರಿಯವಾಗಿದೆ. ಈ ದೇವಾಲಯವು ಬೆಟ್ಟದ ಬುಡದಲ್ಲಿದೆ ಮತ್ತು ಅದರ ಆಕಾರವು 'ಪಿಂಚಿ', ನವಿಲು ಗರಿಗಳ ಪೊರಕೆಯನ್ನು ಹೋಲುತ್ತದೆ. ರಚನೆಯು ವರ್ಣರಂಜಿತ ಗರಿಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ, ಇದು ಜೈನರಿಗೆ ಸಾಂಕೇತಿಕವಾಗಿದೆ, ಇದು ಎಲ್ಲಾ ರೀತಿಯಲ್ಲೂ ಒಂದಾಗಿದೆ. ವಿಶಿಷ್ಟ ವಿನ್ಯಾಸವು 81 ಅಡಿ ಎತ್ತರ ಮತ್ತು 2400 ಚದರ ಅಡಿ ಅಗಲದ ರಚನೆಯೊಂದಿಗೆ ವಿಶಿಷ್ಟ ವಿಶ್ವ ದಾಖಲೆಯನ್ನು ಹೊಂದಿದೆ. ದೇವಾಲಯದ ಒಳಭಾಗವು ಜೈನ ಸಂತರ ಜೀವನವನ್ನು ಚಿತ್ರಿಸುವ 3D ವರ್ಣಚಿತ್ರಗಳಿಂದ ಕೂಡಿದೆ ಮತ್ತು ವರ್ಣಚಿತ್ರಗಳ ಪಕ್ಕದಲ್ಲಿ ಅವರ ಪ್ರತಿಮೆಯನ್ನು ಹೊಂದಿದೆ. ಏತನ್ಮಧ್ಯೆ, ನೀವು ದೇವಾಲಯದ ಒಳಗೆ ಸಂಪೂರ್ಣ ಶಾಂತಿಯನ್ನು ಕಾಣುತ್ತೀರಿ ಮತ್ತು ಇದು ಧ್ಯಾನ ಮಾಡಲು ಉತ್ತಮ ಸ್ಥಳವಾಗಿದೆ. ದೇವಾಲಯದ ನಿರ್ಮಲವಾದ, ಅಚ್ಚುಕಟ್ಟಾಗಿ ಮತ್ತು ಉತ್ತಮವಾಗಿ ನಿರ್ವಹಿಸಲ್ಪಟ್ಟಿರುವ ಸುತ್ತಮುತ್ತಲಿನ ಪ್ರದೇಶವು ನೀವು ಈ ಸ್ಥಳವನ್ನು ಪ್ರೀತಿಸಲು ಮತ್ತೊಂದು ಕಾರಣವಾಗಿದೆ.
+        <br>
+        ನೀವು ದೇವಾಲಯದ ಸಂಕೀರ್ಣವನ್ನು ಪ್ರವೇಶಿಸುವ ಮೊದಲು ನಿಮ್ಮನ್ನು ಸ್ವಾಗತಿಸುವ ಮೊದಲ ನೋಟವೆಂದರೆ ಮುಖ ಮಂಟಪ. ಇದು ಜೈನ ಸಮುದಾಯದ ತಪಸ್ವಿ ಚಂದ್ರನಾಥ ತೀರ್ಥಂಕರನಿಗೆ ಸೇರಿದ ಪ್ರತಿಮೆಯನ್ನು ನಿರ್ಮಿಸಿದೆ. ಮುಂಜಾನೆಯ ನೋಟವು ಮಾಂತ್ರಿಕ ಸೆಳವು ಆಗಿದ್ದು ಅದು ನಿಮ್ಮಲ್ಲಿರುವ ಎಲ್ಲಾ ಇಂದ್ರಿಯಗಳಿಗೆ ಆಹ್ಲಾದಕರವಾಗಿರುತ್ತದೆ. ಇದು ಹೆಚ್ಚು ಗುಣಪಡಿಸುವ ನೋಟದಂತಿದೆ.
+        <br>
+        ಮಂದರಗಿರಿ ಬೆಟ್ಟವು ಪಂಡಿತನಹಳ್ಳಿ ಗ್ರಾಮದಲ್ಲಿ ಒಂದು ಸುಂದರವಾದ ಏಕಶಿಲೆಯನ್ನು ಮಾಡುತ್ತಿದೆ. ಸುತ್ತಿನ ಗುಡ್ಡ, ಉಲುರು ಬಂಡೆಯ ಒಂದು ಸಣ್ಣ ಆವೃತ್ತಿ , ತಳದಿಂದ ಮೇಲಕ್ಕೆ ತಲುಪಲು ಸುಮಾರು 430 - 450 ಚೆನ್ನಾಗಿ ಕೆತ್ತಿದ ಮೆಟ್ಟಿಲುಗಳನ್ನು ಹೊಂದಿದೆ. ಮೇಲ್ಭಾಗದ ಕಡೆಗೆ ಪ್ರಯಾಣವು ಮಧ್ಯಮ ಆರೋಹಣವನ್ನು ನೀಡುತ್ತದೆ ಮತ್ತು ಸರಿಸುಮಾರು 15-20 ನಿಮಿಷಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ. ಆರಂಭಿಕ ವೀಕ್ಷಣೆಗಳು ಕೆಲವು ಜೈನ ದೇವಾಲಯಗಳಾಗಿವೆ ಮತ್ತು ಎತ್ತರದ ನೆಲದ ಮೇಲೆ ನಿಂತಿರುವುದು ನಿಮಗೆ ಆಕರ್ಷಕ ದೃಶ್ಯವನ್ನು ನೀಡುತ್ತದೆ. 
+
+ಬೆಟ್ಟ, ಹತ್ತಿರದ ಹಳ್ಳಿಗಳು ಮತ್ತು ಮೈದಾಳ ಸರೋವರದ ಸುತ್ತಲಿನ ಸ್ಪ್ಲಾಶಿಂಗ್ ನೋಟವನ್ನು ಆನಂದಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಕಲ್ಪನೆಯನ್ನು ವಾಸ್ತವದಿಂದ ಸ್ವಪ್ನಮಯ ಭೂಮಿಗೆ ತಿರುಗಲು ಅನುಮತಿಸಿ. ಹೆಚ್ಚು ಅದ್ಭುತವಾದದ್ದು ಸೂರ್ಯೋದಯ ಅಥವಾ ಸೂರ್ಯಾಸ್ತ, ಪ್ರತಿಯೊಂದೂ ಮಾಂತ್ರಿಕ ಭೂಮಿಯ ವಿಭಿನ್ನ ಬಣ್ಣದ ಕ್ಯಾನ್ವಾಸ್‌ನಂತೆ. ಸೂರ್ಯೋದಯ ಮತ್ತು ಅಸ್ತಮಿಸುತ್ತಿರುವಾಗ ಹೊಳೆಯುತ್ತಿರುವುದನ್ನು ವೀಕ್ಷಿಸಿ
+      </p3>

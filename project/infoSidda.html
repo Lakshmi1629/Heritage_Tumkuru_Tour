@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="title">
+            <h1> MORE ABOUT SIDDAGANGA MATHA</h1>
+          </div>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+        p1 { color:blue ;font-family:cursive;font-size: large;}
+        h3 {color: black;}
+        h2 {color: black;}
+        p2 {color: darkgreen;font-family:cursive;font-size: large;}
+        p3 {color: darkslategray;font-family:cursive;font-size: large;}
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="SIDDAGANGA/Shivakumara-Swamiji-Siddaganga-Mutt.jpg" width="900" height="300" >
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="SIDDAGANGA/siddaganga3.gif" width="900" height="300">
+                
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="SIDDAGANGA/Siddhaganamatha2.jpg" width="900" height="300" >
+              </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="SIDDAGANGA/sidda.png" width="900" height="300">
+          
+        </div>
+    
+        
+    
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+        </html> 
+        
+     
+        <h3>LOCATION</h3>
+      <p1>
+        Sree Siddaganga Mutt is an ancient Gurukul, situated in Tumkur, amidst the beautiful and serene landscape. It aims to provide service to the needy and the poor, and this has been successfully carried out.
+       <!--<img src="NAMADA BOARD.jpg" alt="BOARD" width="300" height="300">-->
+    </p1>
+     <br>
+     <h3 class="history-heading2">HISTORY</h3>
+      <p2>
+        Sree Siddaganga Mutt was established in the 15th Century A.D. by the Sri Gosala Siddeswara Swamiji, who belongs to the Shunya Simhasana, a spiritual academy from the days of social reformer Basaweshwara.The history of Sree Siddaganga Mutt in the last two centuries can be regarded as highly progressive due to its most revered, respected, humane, empowered with knowledge and wisdom of two of its greatest religious leaders.</p2>
+        <br>
+        <br>
+        <p2> At first <strong> Sree Sree Uddana Shivayogiglu</strong> took the responsibility and then <strong>Dr.Sree Sree Sree Shivakumara Swami</strong> took full responsibility for the mutt in the year 1941. He is also the founder of the Sree Siddaganga Educational Society. The tireless efforts of the swami have resulted in the development of free boarding for the children to its present size.At present <strong> Dr. Sree Sree Siddalinga Mahaswamigalu</strong> is taking full responsibility of mutt. </p2>
+      </p2>
+    <br>
+    <br>
+        <p2>The Math has been working for the welfare of human race, aimed to build a secular and welfare India, through its creative and multifaceted activities in true letters and spirit of Basava and his disciples as envisaged in "Sarve Janaha Sukhino Bhavantu". The Heads of this Holy place have traced this path and their entire life was lived with the motto and mission "Work is Worship".
+
+        </p2>
+<br>
+<br>
+        <p2>Sree Siddaganga Math is surrounded by hillocks. Some of the well knowns are: Ramagiri (or Ramalinga) Hills, Siddaganga Hills. These hillocks have number of caves with Shivalinga in them, and the caves have also become the places of research in Shaiva history. The famous Shivagange Hills is also located near Sree Siddaganga Math.
+
+        </p2>
+        <br>
+        <br>
+        <p2> The Shivayogi's were saints with desire for spiritual attainments were always attracted to and attached to the purity of nature and its serene surroundings. They considered NATURE as the CREATOR's gift to the human beings, hence they never dissuaded it.
+
+        </p2>
+        <br>
+        <br>
+        <p2> The caves of Sree Siddaganga hills are regarded as the residences of Shivayogis who took active role in the Basava movement of 12th Century A.D. We find even today many caves in Siddaganga and other hills; four in Ramalinga hills, three in Siddaganga hills and Seven-Eight caves in Shivaganga hills, and most of them are still in good condition.
+
+        </p2>
+
+  <br>
+  <br>
+  
+
+  <h2>ಶ್ರೀ ಸಿದ್ದಗಂಗಾ ಮಠ</h2>
+      <p3>ಶ್ರೀ ಸಿದ್ದಗಂಗಾ ಮಠವು<strong>"ಶಿವಯೋಗಿ ಸಿದ್ದಪುರುಷರ" </strong>ನಿರಂತರ ಸಾಲನ್ನು ಪೋಷಿಸುವ ಪುರಾತನ ಆಶ್ರಮವಾಗಿದೆ.
+    <br>
+    <br>
+      
+ ಈ ಮಠವನ್ನು 15 ನೇ ಶತಮಾನದಲ್ಲಿ<strong>ಶ್ರೀ ಗೋಸಲ ಸಿದ್ದೇಶ್ವರ ಸ್ವಾಮೀಜಿ </strong>ಸ್ಥಾಪಿಸಿದರು
+
+ಪ್ರಖ್ಯಾತ ಶಿವಯೋಗಿಗಳ ಈ ಪರಂಪರೆಯಲ್ಲಿ<strong> ಶ್ರೀ ಶ್ರೀ ಅಟವೀಶ್ವರ ಸ್ವಾಮಿಗಳು, ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಉದ್ದಾನ ಶಿವಯೋಗಿಗಳು ,ಪರಮಪೂಜ್ಯ ಡಾ. ಶ್ರೀ ಶ್ರೀ ಶಿವಕುಮಾರ ಸ್ವಾಮಿಗಳು ಮತ್ತು ಶ್ರೀ ಸಿದ್ದಲಿಂಗ ಮಹಾಸ್ವಾಮಿಗಳು. </strong>ಇವರ ಅನನ್ಯ ಕೊಡುಗೆಗಳೊಂದಿಗೆ ಪ್ರಗತಿ ಸಾಧಿಸಿದೆ.
+
+ಈ ಮಠವು ಭಾರತದ ಬೆಂಗಳೂರಿನಿಂದ 63 ಕಿಮೀ ದೂರದಲ್ಲಿರುವ ಪ್ರಶಾಂತ ಮತ್ತು ವರ್ಣರಂಜಿತ ಭೂದೃಶ್ಯದ ನಡುವೆ ನೆಲೆಗೊಂಡಿದೆ. ಮಠವನ್ನು ಹೆಚ್ಚು ಭೇಟಿ ನೀಡುವ ಯಾತ್ರಾಸ್ಥಳವಾಗಿ ಅಭಿವೃದ್ಧಿಪಡಿಸಲಾಗಿದೆ.
+
+ಶ್ರೀ ಸಿದ್ದಗಂಗಾ ಮಠವು 10,000 ಕ್ಕೂ ಹೆಚ್ಚು ಬಡ ಮಕ್ಕಳಿಗೆ ಉಚಿತ ಊಟ ಮತ್ತು ವಸತಿಯೊಂದಿಗೆ ಯಾವುದೇ ಜಾತಿ, ಧರ್ಮದ ಭೇದಭಾವವಿಲ್ಲದೆ ಶಿಕ್ಷಣವನ್ನು ನೀಡುತ್ತಿರುವ ವಿಶಿಷ್ಟ ಗುರುಕುಲವಾಗಿದೆ. ಮಠವು ವಿವಿಧ ಸ್ಥಳಗಳಲ್ಲಿ ಅಂಧ ಶಾಲೆಗಳನ್ನು ನಡೆಸುತ್ತಿದೆ ಮತ್ತು 100 ಕ್ಕೂ ಹೆಚ್ಚು ಅಂಧ ಮಕ್ಕಳಿಗೆ ಸ್ವತಂತ್ರ ಹಾಸ್ಟೆಲ್ ಸೌಲಭ್ಯಗಳೊಂದಿಗೆ ಉಚಿತ ಶಿಕ್ಷಣ ಮತ್ತು ಆಹಾರವನ್ನು ನೀಡಲಾಗುತ್ತದೆ.
+
+ಮಠವು 1963 ರಲ್ಲಿ ಶ್ರೀ ಸಿದ್ದಗಂಗಾ ಎಜುಕೇಶನ್ ಸೊಸೈಟಿಯನ್ನು ಸ್ಥಾಪಿಸಿತು ಮತ್ತು 128 ಕ್ಕೂ ಹೆಚ್ಚು ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳನ್ನು ನಡೆಸುತ್ತಿದೆ. ಮಠವು ರೈತರ ಅನುಕೂಲಕ್ಕಾಗಿ ವಾರ್ಷಿಕ ಕೃಷಿ ಮತ್ತು ಕೈಗಾರಿಕಾ ಪ್ರದರ್ಶನವನ್ನು ಸಹ ಆಯೋಜಿಸುತ್ತದೆ.
+
+    </p3>

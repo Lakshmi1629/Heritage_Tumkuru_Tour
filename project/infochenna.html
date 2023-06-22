@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="title">
+            <h1> MORE ABOUT SRI CHENNAKESHAVA TEMPLE </h1>
+          </div>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+        p1 { color:blue ;font-family:cursive;font-size: large;}
+        h3 {color: black;}
+        h2 {color: black;}
+        p2 {color: darkgreen;font-family:cursive;font-size: large;}
+        p3 {color: darkslategray;font-family:cursive;font-size: large;}
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="C:\Users\dell\Pictures\project\project\CHENNAKES\chenna3.jpg" width="900" height="300" >
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="C:\Users\dell\Pictures\project\project\CHENNAKES\chenna1.JPG" width="900" height="300">
+                
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="C:\Users\dell\Pictures\project\project\CHENNAKES\chenna2.jpg" width="900" height="300" >
+              </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="C:\Users\dell\Pictures\project\project\CHENNAKES\chenna4.jpg" width="900" height="300">
+          
+        </div>
+    
+        
+    
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+        </html> 
+        
+     
+        <h3>LOCATION</h3>
+      <p1>   Sri chennakeshava swamy temple is situated in kaidala, Tumkur on tumkur- kunigal road, Just around 9km from Gulur village. we have two temples here sculpted by major Amarashilpi Jakanachari.
+      </p1>
+     <br>
+     <h3 class="history-heading2">HISTORY</h3>
+      <p2>
+        The temple is built in Dravidian style around 1151 AD with main dwara (Gate/entry) facing west, walls of the temple enclose the temple like a fort and in walls, we can find some couple sculpture people say it is Jakanachari parents.
+
+        Amarashilpi Jakanachari is born in a small village called kaidala, In earlier days kaidala is called kridapura. We all know he dedicated his life to art. His career is originally started when Nripa Hariya became chieftain of the area.
+
+        jakanachari left home shortly after married, for his work. He traveled so far and wide and forgot his wife, He was so interested in building sculptures.
+        
+        Meanwhile, in kridapura/ kaidala his wife gave birth to a child named, Dankanacharya . He himself grew up and became a famous sculptor and started to search for his father.
+        
+        At Belur, he found a job as sculptor and noticed a flaw in a figure which is sculpted by jakanachari. Dankanacharya told to jakanachari that the store he is carving had a toad ( amphibian with dry, bumpy skin and no tail ) living inside which was a considered to be a flaw by the sculptors. Furious at this jakanachari challenged to cut his right hand if the young sculptor is correct in assesment.
+        <br>
+        Dankanacharya chiselled the place where the flaw was present and a toad jumped out with a little water flowing from that spot. The flaw was indeed revealed and jakanachari kept his promise and cut his right hand, Hence the statue become famous as ‘Kappe Channigaraya’ (Kappe means Frog in Kannada). Later they came to know the relationship between them (father and son).
+
+
+
+  <h2> ಶ್ರೀ ಚೆನ್ನಕೇಶವ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನ </h2>
+      <p3>
+        ಶ್ರೀ ಚೆನ್ನಕೇಶವ ಸ್ವಾಮಿ ದೇವಸ್ಥಾನವು ತುಮಕೂರಿನ ಕೈದಾಳದಲ್ಲಿದೆ, ತುಮಕೂರು-ಕುಣಿಗಲ್ ರಸ್ತೆಯಲ್ಲಿ, ಗೂಳೂರು ಗ್ರಾಮದಿಂದ ಕೇವಲ 9 ಕಿಮೀ ದೂರದಲ್ಲಿದೆ. ಪ್ರಮುಖ ಅಮರಶಿಲ್ಪಿ ಜಕಣಾಚಾರಿಯಿಂದ ಕೆತ್ತಲ್ಪಟ್ಟ ಎರಡು ದೇವಾಲಯಗಳನ್ನು ನಾವು ಹೊಂದಿದ್ದೇವೆ
+        ದೇವಾಲಯವನ್ನು 1151 AD ಯಲ್ಲಿ ದ್ರಾವಿಡ ಶೈಲಿಯಲ್ಲಿ ನಿರ್ಮಿಸಲಾಗಿದೆ, ಮುಖ್ಯ ದ್ವಾರ (ದ್ವಾರ / ಪ್ರವೇಶ) ಪಶ್ಚಿಮಕ್ಕೆ ಎದುರಾಗಿದೆ, ದೇವಾಲಯದ ಗೋಡೆಗಳು ದೇವಾಲಯವನ್ನು ಕೋಟೆಯಂತೆ ಸುತ್ತುವರೆದಿವೆ ಮತ್ತು ಗೋಡೆಗಳಲ್ಲಿ ಕೆಲವು ಜೋಡಿ ಶಿಲ್ಪಕಲೆ ಜನರು ಇದನ್ನು ಜಕಣಾಚಾರಿ ಪೋಷಕರು ಎಂದು ಹೇಳುವುದನ್ನು ನಾವು ಕಾಣಬಹುದು.
+       <br>
+        ಅಮರಶಿಲ್ಪಿ ಜಕಣಾಚಾರಿಯು ಕೈದಾಳ ಎಂಬ ಸಣ್ಣ ಹಳ್ಳಿಯಲ್ಲಿ ಜನಿಸಿದರು, ಹಿಂದಿನ ದಿನಗಳಲ್ಲಿ ಕೈದಾಳವನ್ನು ಕ್ರೀಡಾಪುರ ಎಂದು ಕರೆಯಲಾಗುತ್ತಿತ್ತು. ಅವರು ಕಲೆಗಾಗಿ ತಮ್ಮ ಜೀವನವನ್ನು ಮುಡಿಪಾಗಿಟ್ಟಿದ್ದು ನಮಗೆಲ್ಲರಿಗೂ ತಿಳಿದಿದೆ. ಅವರ ವೃತ್ತಿಜೀವನವು ಮೂಲತಃ ನೃಪಾ ಹರಿಯಾ ಪ್ರದೇಶದ ಮುಖ್ಯಸ್ಥರಾದಾಗ ಪ್ರಾರಂಭವಾಯಿತು.
+
+ಮದುವೆಯಾದ ಕೆಲವೇ ದಿನಗಳಲ್ಲಿ ಜಕಣಾಚಾರಿ ತನ್ನ ಕೆಲಸದ ನಿಮಿತ್ತ ಮನೆಬಿಟ್ಟು ಹೋದ. ಅವನು ತುಂಬಾ ದೂರ ಪ್ರಯಾಣಿಸಿ ತನ್ನ ಹೆಂಡತಿಯನ್ನು ಮರೆತನು, ಅವನು ಶಿಲ್ಪಗಳನ್ನು ನಿರ್ಮಿಸುವುದರಲ್ಲಿ ತುಂಬಾ ಆಸಕ್ತಿ ಹೊಂದಿದ್ದನು.
+
+ಏತನ್ಮಧ್ಯೆ, ಕ್ರೀಡಾಪುರ/ ಕೈದಾಳದಲ್ಲಿ ಅವನ ಹೆಂಡತಿ ಡಂಕಣಾಚಾರ್ಯ ಎಂಬ ಮಗುವಿಗೆ ಜನ್ಮ ನೀಡಿದಳು  . ತಾನೂ ಬೆಳೆದು ಪ್ರಸಿದ್ಧ ಶಿಲ್ಪಿಯಾಗಿ ತಂದೆಯನ್ನು ಹುಡುಕತೊಡಗಿದ.
+
+ಬೇಲೂರಿನಲ್ಲಿ, ಅವರು ಶಿಲ್ಪಿ ಕೆಲಸವನ್ನು ಕಂಡುಕೊಂಡರು ಮತ್ತು ಜಕಣಾಚಾರಿಯಿಂದ ಕೆತ್ತಿದ ಆಕೃತಿಯಲ್ಲಿ ದೋಷವನ್ನು ಗಮನಿಸಿದರು. ಡಂಕಣಾಚಾರ್ಯರು ಜಕಣಾಚಾರಿಗೆ ತಾವು ಕೆತ್ತುತ್ತಿರುವ ಅಂಗಡಿಯಲ್ಲಿ ಒಂದು ಟೋಡ್ (ಒಣಗಿದ, ನೆಗೆಯುವ ಚರ್ಮ ಮತ್ತು ಬಾಲವಿಲ್ಲದ ಉಭಯಚರ) ವಾಸಿಸುತ್ತಿದೆ ಎಂದು ಶಿಲ್ಪಿಗಳ ದೋಷವೆಂದು ಪರಿಗಣಿಸಲಾಗಿದೆ ಎಂದು ಹೇಳಿದರು. ಇದರಿಂದ ಕುಪಿತಗೊಂಡ ಜಕಣಾಚಾರಿ ಯುವ ಶಿಲ್ಪಿಯ ಮೌಲ್ಯಮಾಪನ ಸರಿಯಾಗಿದ್ದರೆ ತನ್ನ ಬಲಗೈ ಕತ್ತರಿಸುತ್ತೇನೆ ಎಂದು ಸವಾಲು ಹಾಕಿದರು.
+
+ಡಂಕಣಾಚಾರ್ಯರು ದೋಷವಿದ್ದ ಜಾಗವನ್ನು ಉಳಿಸಿ, ಆ ಸ್ಥಳದಿಂದ ಸ್ವಲ್ಪ ನೀರು ಹರಿಯುವುದರೊಂದಿಗೆ ಒಂದು ಟೋಡ್ ಜಿಗಿಯಿತು. ದೋಷವು ನಿಜವಾಗಿಯೂ ಬಹಿರಂಗವಾಯಿತು ಮತ್ತು ಜಕಣಾಚಾರಿ ತನ್ನ ಭರವಸೆಯನ್ನು ಉಳಿಸಿಕೊಂಡನು ಮತ್ತು ಅವನ ಬಲಗೈಯನ್ನು ಕತ್ತರಿಸಿದನು, ಆದ್ದರಿಂದ ಪ್ರತಿಮೆಯು 'ಕಪ್ಪೆ ಚನ್ನಿಗರಾಯ' (ಕನ್ನಡದಲ್ಲಿ ಕಪ್ಪೆ ಎಂದರೆ ಕಪ್ಪೆ) ಎಂದು ಪ್ರಸಿದ್ಧವಾಯಿತು. ನಂತರ ಅವರ (ತಂದೆ ಮತ್ತು ಮಗ) ನಡುವಿನ ಸಂಬಂಧವನ್ನು ಅವರು ತಿಳಿದುಕೊಂಡರು.
+      </p3>

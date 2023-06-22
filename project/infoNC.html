@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="title">
+            <h1> MORE ABOUT NAMADA CHILUME</h1>
+          </div>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+        p1 { color:blue ;font-family:cursive;font-size: large;}
+        h3 {color: black;}
+        h2 {color: black;}
+        p2 {color: darkgreen;font-family:cursive;font-size: large;}
+        p3 {color: darkslategray;font-family:cursive;font-size: large;}
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="NAMADACHILUME/Namada gate.jpg" width="900" height="300" >
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="NAMADACHILUME/Namada water.jpg" width="900" height="300">
+                
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="NAMADACHILUME/Namada rama.jpg" width="900" height="300" >
+              </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="NAMADACHILUME/deer.jpg" width="900" height="300">
+          
+        </div>
+    
+        
+    
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+        </html> 
+        
+     
+        <h3>LOCATION</h3>
+      <p1>
+        Namada Chilume is a place located around 8km from Devarayana Durga.
+        Namada Chilume is a natural spring of Tilaka or Nama.
+        The Tilaka or Pundraka is a mark on the forehead with sandalwood paste or any colored vermilion as a ritual as per the Hindu culture.
+        The spring is located at the base of the hill on the road to Tumkur.
+       <!--<img src="NAMADA BOARD.jpg" alt="BOARD" width="300" height="300">-->
+    </p1>
+     <br>
+     <h3 class="history-heading2">HISTORY</h3>
+      <p2 class="Legends_of_NAMADA_CHILUME">
+        According to legends, Lord Rama, during his exile in the forest or the Vanvasa, halted at this place on his way to Lanka.
+        The story says that Lord Rama wanted to apply Nama on his forehead, but since he didn’t find water anywhere,he shot an arrow into the ground and the spring opened from underground.
+        <!--<img src="Namada rama.jpg" alt="BOARD" width="300" height="300">-->
+
+        That is how the name go derived from the place – Namada Chelume (Rama-namada Chilume) which means spring of Tilaka.
+        The spring is still present and has water all-round the year.
+        The water comes out of a small hole in the ground. Even a foot impression of Lord Rama is also found near the spring.
+        The spring is currently enclosed by the forest department to preserve it.
+      </p2>
+  <br>
+  <br>
+  
+
+  <h2>ನಾಮದ ಚಿಲುಮೆ</h2>
+      <p3>ನಾಮದ ಚಿಲುಮೆ - ತುಮಕೂರು ಜಿಲ್ಲೆಯ ದೇವರಾಯನ ದುರ್ಗದ ಸಮೀಪವಿರುವ ಒಂದು ಪ್ರೇಕ್ಷಣೀಯ ಸ್ಥಳ. ಇದು ತುಮಕೂರು ನಗರದಿಂದ ೧೦ ಕಿ.ಮೀ ದೂರದಲ್ಲಿದೆ.
+    <br>
+      ರಾಮಾಯಣ ಕಾಲದಲ್ಲಿ ಶ್ರೀ ರಾಮಚಂದ್ರ, ಲಕ್ಷ್ಮಣ, ಸೀತೆ ಕೆಲ ಕಾಲ ದೇವರಾಯನದುರ್ಗ ಕಾಡಿನಲ್ಲಿ ವನವಾಸ ಅನುಭವಿಸಿದರು ಎಂಬ ಸ್ಥಳ ಪುರಾಣ ಇದೆ.
+      ಒಮ್ಮೆ ರಾಮನಿಗೆ ಹಣೆಗೆ ತಿಲಕವಿಡುವ ಸಂದರ್ಭ ಬಂದಿತು. ನೀರಿಗಾಗಿ ಸುತ್ತಲೂ ನೋಡಿದರೂ ಎಲ್ಲಿಯೂ ನೀರು ಸಿಗಲೇ ಇಲ್ಲ.
+      ಆಗ ಆ ಸ್ಥಳದಲ್ಲೇ ಬಾಣ ಹೂಡಿ ಒಂದು ಬಂಡೆಯ ಮೇಲೆ ಬಿಟ್ಟಾಗ, ಬಾಣ ಒಳಹೊಕ್ಕು ರಂಧ್ರವನ್ನು ಕೊರೆದು ಅಲ್ಲಿ ನೀರಿನ ಬುಗ್ಗೆ ಚಿಮ್ಮಿತು.
+      ಆ ನೀರನ್ನು ತೆಗೆದುಕೊಂಡು ರಾಮ ತನ್ನ ಹಣೆಗೆ ನಾಮವನ್ನು ಧರಿಸಿದನಂತೆ. ಹಾಗಾಗಿ ಈ ಚಿಲುಮೆಗೆ ನಾಮದ ಚಿಲುಮೆಎಂಬ ಹೆಸರು ಬಂದಿದೆ.
+      ಕಡು ಬೇಸಿಗೆಯಲ್ಲೂ ಇಲ್ಲಿ ನೀರು ಚಿಮ್ಮುತ್ತಲೇ ಇರುವುದು ವಿಶೇಷ. ನಾಮದ ಚಿಲುಮೆಯಲ್ಲಿ ಒಂದು ಸಣ್ಣ ಮ್ರಗಾಲಯವಿದ್ದು ಅದರಲ್ಲಿ ಜಿಂಕೆ, ಕವಡೆ ಇತ್ಯಾದಿ ಪ್ರಾಣಿಗಳಿವೆ.
+       ತಂಪಾದ ಗಾಳಿ, ಉತ್ತಮ ಮರಗಳು, ತುಂಟ ಕೊತಿಗಳು, ಬಣ್ಣ ಬಣ್ಣದ ಪಕ್ಷಿಗಳಿರುವ ಇದು ವಾರಾಂತ್ಯ ಕಳೆಯಲು ಉತ್ತಮ ಸ್ಠಳ.
+    </p3>
